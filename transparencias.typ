@@ -13,7 +13,7 @@
 
 #set text(lang: "es")
 
-#let title = [Haz tu TFG/TFM en Typst]
+#let title = [Haz tu TFG/TFM con Typst]
 #let org = [GUL UC3M]
 
 // pass the "PRESENTATION" variable w/ --input to enable presentation mode
@@ -34,6 +34,7 @@
   ),
 )
 
+#set figure(caption: [])
 
 
 #set list(indent: 1em, spacing: 1em)
@@ -102,8 +103,7 @@
 /* TITLEPAGE */
 
 #my-title-slide[
-  #heading(title, outlined: false)
-  === Introducción a Typst
+  #text(title, size: 1.95em, weight: "bold")
   #v(2em)
 
   Luis Daniel Casais\
@@ -125,7 +125,10 @@
 
 /* QR */
 
-#let transparencias = touying-set-config(config-page(header: none))[
+#let transparencias = touying-set-config(config-page(
+  header: none,
+  footer: none,
+))[
   == Transparencias
   #{
     let url = "https://github.com/rajayonin/typst-thesis/blob/main/transparencias.pdf"
@@ -144,14 +147,15 @@
 /* CONTENTS */
 
 #include "parts/intro.typ"
+#include "parts/plantilla.typ"
 #include "parts/text.typ"
+#include "parts/bib.typ"
 #include "parts/figures.typ"
 #include "parts/extra.typ"
 
 
 /* MOAR INFO */
 
-#clear-header()
 
 == Más información
 #v(1fr)
@@ -165,7 +169,7 @@
 - #hi-link("https://typst.app/docs/guides/guide-for-latex-users/")[Guía para
     usuarios de #LaTeX]
 - #hi-link("https://youtu.be/Apaqtno3ACE")[L. D. Casais -- Memorias de p\*\*\*\*
-    madre: Introducción a Typst]
+    madre: Introducción a Typst] (2025)
 
 #v(1fr)
 

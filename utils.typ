@@ -51,13 +51,6 @@
   link(dest, body)
 }
 
-/// Clears the header, to be used in the absence of a level 1 heading.
-///
-/// -> content
-#let clear-header() = [
-  =
-]
-
 
 /// Mentions a Typst function, with link to docs.
 ///
@@ -80,7 +73,7 @@
 ///
 /// - path (str): Path in the documentation URL
 /// - name (str): Modulw name
-/// ->
+/// -> content
 #let mod(path, name) = {
   assert(not path.ends-with("/"))
   assert(not path.starts-with("/"))
