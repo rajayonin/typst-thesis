@@ -170,6 +170,8 @@
     usuarios de #LaTeX]
 - #hi-link("https://youtu.be/Apaqtno3ACE")[L. D. Casais -- Memorias de p\*\*\*\*
     madre: Introducción a Typst] (2025)
+- #hi-link("https://github.com/guluc3m/uc3m-thesis-typst#examples")[Ejemplos de
+    TFGs/TFMs en Typst]
 
 #v(1fr)
 
