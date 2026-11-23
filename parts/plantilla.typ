@@ -74,20 +74,27 @@ typst init @preview/fancy-uc3m-thesis mi-tfg
 
 *Estilo:*
 
-```typ
-#show: conf.with(
-  // ...
-  language: "es", // o "en"
-  format: "ieee", // o "apa"
-  style: "fancy", // o "clean" o "strict"
-  license: true,
-  double-sided: true,
-  flyleaf: true,
-  bibliography-content: bibliography(
-    "references.bib",
-    style: "ieee" // o "apa", o...
-  ),
-```
+#box[
+  ```typ
+  #show: conf.with(
+    // ...
+    language: "es", // o "en"
+    format: "ieee", // o "apa"
+    style: "fancy", // o "clean" o "strict"
+    license: true,
+    double-sided: true,
+    flyleaf: true,
+    bibliography-content: bibliography(
+      "references.bib",
+      style: "ieee" // o "apa", o archivo.cls
+    ),
+  ```
+  #place(bottom + right, dx: -159pt, dy: -32pt, footnote[Puedes obtener archivos
+    #hi-link("https://citationstyles.org/")[CLS] en el el #hi-link(
+      "https://www.zotero.org/styles",
+    )[repositorio de Zotero], .])
+]
+
 
 #v(1fr)
 

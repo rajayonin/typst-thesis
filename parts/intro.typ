@@ -43,6 +43,9 @@
     "https://github.com/typst/typst?tab=readme-ov-file#installation",
     [Typst CLI],
   )
+  - `typst w archivo.typ` + visor PDF (#hi-link(
+      "https://okular.kde.org/",
+    )[Okular]/#hi-link("https://pwmt.org/projects/zathura/")[Zathura])
 // - Linux
 //   - Arch, OpenSuse: `typst`
 //   - cargo: `typst-cli`
@@ -83,7 +86,7 @@
 
 
 #{
-  v(.6em)
+  v(-.5em)
   set align(center)
   set text(1.4em)
   strong[¡A instalar!]

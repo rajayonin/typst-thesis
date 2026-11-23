@@ -45,8 +45,7 @@ Soporta #link("https://www.w3.org/TR/REC-png-961001")[PNG], #link(
 
 
 === Generación de diagramas
-Se recomienda trabajar con SVGs.
-
+Se recomienda trabajar con SVGs:
 - #hi-link("https://www.drawio.com")[draw.io]: La vieja confiable\
 #pause
 - #hi-link("https://excalidraw.com/")[Excalidraw]: Un rollito más _cool_
@@ -54,10 +53,6 @@ Se recomienda trabajar con SVGs.
 - #hi-link("https://plantuml.com/")[PlantUML]: Lenguaje declarativo para #link(
     "https://www.omg.org/uml/",
   )[UML]
-#pause
-- #hi-link("https://cetz-package.github.io/")[CeTZ]/#hi-link(
-    "https://typst.app/universe/package/fletcher",
-  )[fletcher] o derivados: Puro Typst (para _tryhards_)
 
 #pause
 
@@ -66,6 +61,14 @@ Se recomienda trabajar con SVGs.
     )[draw.io FAQ].], exportar como PDF, importar en #hi-link(
     "https://inkscape.org/",
   )[Inkscape], y re-exportar a SVG.]
+
+#pause
+
+O usar el propio Typst y #hi-link(
+  "https://cetz-package.github.io/",
+)[CeTZ] y #hi-link(
+  "https://typst.app/universe/package/cetz#projects-using-cetz",
+)[derivados] (para _tryhards_)
 
 
 == Tablas

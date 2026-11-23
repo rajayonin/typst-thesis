@@ -76,7 +76,7 @@ Para colocar cosas:
   ) (espaciado #[*h*]orizontal)
 - #fn("reference/layout", "box")
 - #fn("reference/layout", "grid")
-- #fn("reference/layout", "align") (#rawc("set align(center)"))
+- #fn("reference/layout", "align") #sym.arrow #rawc("set align(center)")
 - #fn("reference/layout", "place")
 
 #pause
@@ -142,25 +142,28 @@ Importante tener en cuenta los _path_:
 == Paquetes
 
 #let pkg(name) = link(
-  "https://typst.app/universe/package/fancy-uc3m-thesis/" + name,
+  "https://typst.app/universe/package/" + name,
   raw(name),
 )
 
+#set footnote(numbering: "*")
+#counter(footnote).step() // prefiero † a * para la footnote
+
 Disponibles en #hi-link("https://typst.app/universe/")[Typst Universe] (800+).
-
-#speaker-note([Volver a mencionar CeTZ/fletcher.])
-
+#v(-.2em)
 - Bloques de código: #pkg("codly")
-- Gráficas: #pkg("lilaq") (ejemplo en plantilla)
+- Gráficas: #pkg("lilaq")#footnote[Ejemplo en la plantilla]<foot:plantilla>
 - Algoritmos: #pkg("lovelace")
 - Teoremas bonicos: #pkg("theorion")
 #speaker-note([Estas transparencias están echas en Typst con Touying.])
-- Glosario: #pkg("glosarium")
-- Gantt: #pkg("timeley") (ejemplo en plantilla)
+- Glosario: #pkg("glosarium")@foot:plantilla
+- Gantt: #pkg("timeley")@foot:plantilla
 // - Ingeniería de verdad: #pkg("physica"), #pkg("zero"), #pkg(
 //     "quick-maths",
 //   )
-- UML: #pkg("sourcecraft")
+- Diagramas: #pkg("cetz"), #pkg("fletcher"), #pkg("sourcecraft"), #hi-link(
+    "https://typst.app/universe/package/cetz#projects-using-cetz",
+  )[etc.]
 - Requisitos de _software_: #pkg("larman")
 - Presentaciones: #pkg("touying"), #pkg("gentle-clues"), #pkg(
     "pinit",
